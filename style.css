@@ -1,0 +1,339 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4 !important;
+     
+}
+h2{
+    font-size:30px
+}
+h3{
+    padding:20px;
+}
+h4{
+    padding:20px;
+}
+
+a:hover{ 
+    background-color: #ebe3e3 !important;
+    color:rgb(0, 123, 255) !important;
+    border:1px solid #ebe3e3 !important ;
+}
+p{
+    font-size:16px !important;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+header nav{
+    box-shadow: 1px 1px 5px 1px rgb(182, 178, 178);
+    font-size: 18px;
+    background-color: white;
+   
+    
+    z-index: 99;
+    
+   
+
+}
+.header nav:hover{
+    
+}
+
+/*****************************jumbtron*****************************************/
+
+.jumbtron-background{
+    
+    height:84vh;
+    padding:40px;
+    background:linear-gradient(rgb(255, 255, 255,1),rgba(255, 255, 255, .6)),url("./img/intro.jpg")  no-repeat fixed;
+    background-size: cover;
+    background-position: 40%;
+   
+    
+
+}
+.jumbtron-background h2{
+    margin-top:100px;
+}
+.jumbtron-background a{
+    padding:5px 90px;
+    border-radius:20px;
+    margin:30px;
+    transition:background-color , color 2s;
+}
+
+.jumbtron-background a:hover{
+    background-color:white;
+    color:rgb(0, 123, 255)
+}
+
+/**********************************about us**************************/
+
+.padding{
+    padding-top:80px;
+}
+.about-us{
+    transition:3s
+}
+
+.about-details i{
+    font-size:40px;
+    color:rgb(0, 123, 255);
+    padding:20px;
+}
+
+/*************************************experience******************/
+.experience-container{
+    background-color:#142442;
+    color:white;
+    width: 100%;
+   
+    
+    
+
+}
+.experience-container i{
+font-size:40px;
+padding:20px;
+}
+.experience{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/**************************work**************************/
+
+.portfolio{
+    text-align: center;
+    padding:20px;
+    
+}
+.work{
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    width:300px;
+    height:240px;
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0, .1);
+    padding:0
+    
+}
+.work img{
+    width:100%;
+    height:200px;
+    transition:filter .5s, transform .2s;
+    
+}
+.work h6{
+width:100%;
+height:30px;
+padding:10px;
+text-align: center;
+background-color:white;
+transition: height .5s , background-color .3s, transform .5s, color .3s;
+
+}
+.work:hover img{
+    transform:scale(1.5);
+    filter: blur(5px);
+
+}
+.work:hover h6{
+    height:90px;
+    background-color: #142442;
+    transform:translateY(-100px);
+    color:white;
+    padding:35px;
+}
+.work-with-us{
+    width:100%;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("./img/work-with-us.jpg") no-repeat fixed ;
+    background-size:cover;
+
+}
+
+/**********************************service**************************************/
+.services{
+    background-color:#ffffff;
+}
+
+.service{
+    text-align: center;
+    
+}
+.service i{
+    font-size:40px;
+    color:rgb(0, 123, 255);
+    padding:20px;
+}
+
+/***********************************plans**************************************/
+.plans{
+    
+    margin:20px auto;
+}
+.plan{
+    width:300px;
+    height:500px;
+    padding:10px;
+    background-color:white;
+    box-shadow:  0px 0px 15px  rgba(0, 0, 0, .1);
+    border-top:10px solid rgb(0, 123, 255);
+    border-radius: 10px;
+}
+
+/********************************team********************************************/
+.team-container{
+    
+}
+.team{
+    background-color:white;
+}
+.member img{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+}
+.member-contacts ul{
+    list-style-type: none;
+}
+.member-contacts a{
+    padding:10px;
+}
+
+/***********************************contact************************************/
+.form-container{
+    background-color: #ffffff;
+    padding:40px;
+}
+
+/**************************************footer*************************************/
+
+.footer{
+    
+    background-color:#142442;
+    color:white;
+}
+.footer ul{
+list-style-type:none;
+}
+.footer a{
+    color:white;
+    padding:10px;
+
+}
+.footer a:hover{
+    background-color:transparent !important;
+    border:none !important;
+}
+
+
+
+.arrow-up{
+    position: fixed;
+    text-align: center;
+    right:0;
+    bottom:0;
+    
+    width:40px;
+    height:60px;
+    border-radius: 10px;
+    background-color: #142442;
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.7);
+    margin: 10px;
+}
+.arrow-up a i{
+    color:white;
+    font-size: 20px;
+    padding-top:20px;
+    text-align: center
+}
+.arrow-up a:hover{
+    background-color:transparent !important;
+    border:none !important;
+    
+}
+
+/**************************  animation   *********************************/
+@keyframes animate-scroll {
+    0%{
+        transform:scale(.7);
+        filter:blur(5px);
+    }
+    100%{
+        transform:scale(1);
+        filter:blur(0);
+
+    }
+
+}
+
+@keyframes animate-icons {
+    0%{
+        transform:translateY(-15px);
+        transform:scale(1.3);
+    }
+    100%{
+        transform:translateY(0);
+        transform:scale(0);
+
+    }
+
+}
+@keyframes animate-text{
+    0%{
+      
+        transform:scale(1);
+    }
+    100%{
+      
+        transform:scale(.8);
+
+    }
+
+}
+
+
+.animate-icon:hover p{
+    animation-name: animate-text;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+}
+
+
+.animate-icon{
+    cursor: pointer;
+}
+.animate-icon:hover i{
+    animation-name: animate-icons;
+    animation-duration:1s;
+    animation-direction: alternate-reverse;
+}
+
+
+
+
+
+
+.animate{
+    animation-name: animate-scroll;
+    animation-duration: 2s;
+    animation-direction: normal;
+    /* animation-iteration-count: infinite */
+
+    
+   
+
+}
+
